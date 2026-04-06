@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- PWA -->
+    <meta name="theme-color" content="#1a0000">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Vorg Web">
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="icon" href="https://files.catbox.moe/latvbr.png" type="image/png">
+    <link rel="apple-touch-icon" href="https://files.catbox.moe/latvbr.png">
+    <link rel="stylesheet" href="global.css">
+    <title>Finalizar Pedido - Vorg Web</title>
+</head>
+<body class="home">
+
+    <div class="top-section">
+        <a href="home.html" style="text-decoration: none; display: flex; align-items: center; gap: 40px;">
+            <img src="https://files.catbox.moe/latvbr.png" alt="Logo Vorg Web" class="top-logo">
+            <div class="top-text">
+                <h1 class="top-title">Vorg Web</h1>
+            </div>
+        </a>
+    </div>
+
+    <main class="contact-container">
+        <section class="contact-card">
+            <h2>Quase lá! Vamos criar seu site.</h2>
+            <p>Atendimento 100% personalizado via e-mail. Resposta em até 24h úteis.</p>
+
+            <div class="instructions">
+                <h3>Próximos passos:</h3>
+                <ul>
+                    <li>Clique no botão abaixo e abra seu e-mail.</li>
+                    <li>Informe o plano escolhido (Informacional, Funcional ou Plus).</li>
+                    <li>Descreva sua ideia: cores, páginas, funcionalidades desejadas.</li>
+                    <li>Envie referências ou exemplos se tiver.</li>
+                    <li>Receba orçamento detalhado, prazos e link para pagamento.</li>
+                </ul>
+            </div>
+
+            <a href="mailto:vorgwebsuport@gmail.com?subject=Pedido de Site - Vorg Web&body=Olá equipe Vorg Web!%0D%0A%0D%0AQuero encomendar um site.%0D%0APlano escolhido: [ex: PLUS]%0D%0ADetalhes do projeto: [descreva aqui]%0D%0ACores preferidas: %0D%0APáginas desejadas: %0D%0AFuncionalidades extras:" class="btn-comprar">
+                ENVIAR E-MAIL AGORA
+            </a>
+
+            <p class="support-text">
+                Prefere copiar o e-mail?
+                <span>vorgwebsuport@gmail.com</span>
+            </p>
+        </section>
+    </main>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js').catch(() => {});
+            });
+        }
+    </script>
+</body>
+</html>
